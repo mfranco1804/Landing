@@ -1,0 +1,17 @@
+# Dr. Julián Sotomayor V. — Medicina Interna & Longevidad Preventiva (Demo)
+
+> Landing page y perfil médico de demostración de alta gama, optimizado para consulta especializada y chequeos integrales.
+
+## Información Profesional (Demostración)
+- **Especialista:** Dr. Julián Sotomayor V.
+- **Especialidades:** Medicina Interna, Riesgo Cardiometabólico, Medicina Preventiva y Longevidad Celular.
+- **Servicios Principales:**
+  - Chequeo Ejecutivo 360° y Optimización de Edad Biológica
+  - Control de Hipertensión, Colesterol y Resistencia a la Insulina
+  - Valoración Médica Preoperatoria con informe en 24h
+  - Diagnóstico y Tratamiento de Fatiga Crónica y Disbiosis
+- **Acreditaciones y Avales:** Membresías en Sociedades de Medicina Interna y Cardiometabolismo.
+- **Atención:** Consultas privadas presenciales y telemedicina con agendamiento inmediato.
+
+## Nota de Personalización Demo
+Esta información y estructura corresponden a una plantilla interactiva desarrollada para médicos y clínicas. Todo el contenido es completamente configurable y adaptable al perfil de cualquier especialista médico.

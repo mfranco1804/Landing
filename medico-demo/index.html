@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- ==========================================================================
+       1. GOOGLE YMYL & MEDICAL SEO META TAGS (DEMO TEMPLATE)
+       ========================================================================== -->
+  <title>Dr. Julián Sotomayor | Medicina Interna & Longevidad Preventiva (Demo)</title>
+  <meta name="description" content="Plantilla Landing Page Médica de Alta Conversión. Dr. Julián Sotomayor — Especialista en Medicina Interna, Cardiometabolismo y Chequeos de Longevidad. Totalmente personalizable.">
+  <meta name="keywords" content="medico internista, medicina interna, cardiometabolismo, chequeo ejecutivo, longevidad preventiva, salud metabolica, consulta medica privada">
+  <meta name="author" content="Dr. Julián Sotomayor V.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  
+  <!-- Medical Quality & Freshness Signals -->
+  <meta name="medical-specialty" content="Internal Medicine, Cardiometabolic Health, Preventive Medicine, Longevity">
+  <meta name="doc-type" content="Medical Web Page Demo">
+  <meta name="revised" content="2026-08-31">
+  <meta name="date-modified" content="2026-08-31">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Dr. Julián Sotomayor | Medicina Interna & Longevidad Preventiva">
+  <meta property="og:description" content="Diagnóstico médico de causa raíz, control cardiometabólico integral y chequeos de longevidad sin prisas.">
+  <meta property="og:image" content="assets/dr_julian_portrait.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="900">
+  
+  <!-- Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- ==========================================================================
+       2. GOOGLE YMYL SCHEMA.ORG GRAPH (JSON-LD)
+       ========================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://demo-medico.local/#medicalpage",
+        "name": "Dr. Julián Sotomayor | Medicina Interna y Longevidad Preventiva",
+        "description": "Portal médico de demostración de alta gama con información sobre chequeos de longevidad, control cardiometabólico y valoración preoperatoria.",
+        "inLanguage": "es",
+        "lastReviewed": "2026-08-31",
+        "reviewedBy": {
+          "@id": "https://demo-medico.local/#physician"
+        }
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://demo-medico.local/#physician",
+        "name": "Dr. Julián Sotomayor V.",
+        "medicalSpecialty": [
+          "InternalMedicine",
+          "Cardiovascular",
+          "PublicHealthPreserve"
+        ],
+        "image": "assets/dr_julian_portrait.jpg",
+        "description": "Médico Especialista en Medicina Interna, Manejo del Riesgo Cardiometabólico y Protocolos de Longevidad Basados en Evidencia."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://demo-medico.local/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste el Chequeo Ejecutivo de Longevidad 360°?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es una evaluación clínica exhaustiva de 60 minutos que analiza biomarcadores metabólicos, salud cardiovascular, perfil inflamatorio, edad biológica y estilo de vida para diseñar un plan de prevención personalizado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo personalizar esta landing page para mi clínica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Esta página es una plantilla de demostración. Todos los textos, fotografías, colores corporativos, servicios médicos y enlaces de WhatsApp o reserva de citas se configuran a la medida de tu práctica médica."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ==========================================================================
+       3. CSS DESIGN SYSTEM (TOKENS & HIGH-END STYLES)
+       ========================================================================== -->
+  <style>
+    :root {
+      /* Theme 1: Obsidian & Bio-Teal (Default) */
+      --primary: #0B132B;
+      --primary-rgb: 11, 19, 43;
+      --primary-light: #1C2541;
+      --accent: #0E7490;
+      --accent-rgb: 14, 116, 144;
+      --accent-hover: #0891B2;
+      --accent-light: #ECFEFF;
+      --warm: #D97706;
+      --warm-light: #FEF3C7;
+      
+      --bg-body: #F8FAFC;
+      --bg-surface: #FFFFFF;
+      --bg-surface-elevated: #FFFFFF;
+      --border-subtle: #E2E8F0;
+      --border-focus: #0E7490;
+      
+      --text-main: #0B132B;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --text-inverse: #FFFFFF;
+      
+      --shadow-sm: 0 2px 8px rgba(11, 19, 43, 0.04);
+      --shadow-md: 0 8px 24px -4px rgba(11, 19, 43, 0.08);
+      --shadow-lg: 0 20px 40px -12px rgba(11, 19, 43, 0.12);
+      --shadow-glow: 0 0 25px rgba(14, 116, 144, 0.25);
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Alternative Themes for Live Demo Switcher */
+    [data-theme="sapphire"] {
+      --primary: #0F172A;
+      --primary-light: #1E293B;
+      --accent: #2563EB;
+      --accent-rgb: 37, 99, 235;
+      --accent-hover: #1D4ED8;
+      --accent-light: #EFF6FF;
+      --warm: #0284C7;
+    }
+    [data-theme="emerald"] {
+      --primary: #064E3B;
+      --primary-light: #065F46;
+      --accent: #059669;
+      --accent-rgb: 5, 150, 105;
+      --accent-hover: #047857;
+      --accent-light: #ECFDF5;
+      --warm: #D97706;
+    }
+    [data-theme="luxury-gold"] {
+      --primary: #18181B;
+      --primary-light: #27272A;
+      --accent: #B45309;
+      --accent-rgb: 180, 83, 9;
+      --accent-hover: #92400E;
+      --accent-light: #FFFBEB;
+      --warm: #D97706;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ==========================================================================
+       DEMO CUSTOMIZER TOP BAR & DRAWER
+       ========================================================================== */
+    .demo-bar {
+      background: linear-gradient(90deg, #1E1B4B 0%, #0F172A 100%);
+      color: #FFFFFF;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+    }
+    .demo-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 500;
+    }
+    .demo-badge {
+      background: #F59E0B;
+      color: #000000;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .demo-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #000000;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+    .demo-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .demo-btn-theme {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition-smooth);
+    }
+    .demo-btn-theme:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .demo-btn-cta {
+      background: #10B981;
+      color: #FFFFFF;
+      padding: 0.35rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .demo-btn-cta:hover {
+      background: #059669;
+      transform: translateY(-1px);
+    }
+
+    /* Demo Customizer Modal / Drawer */
+    .demo-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .demo-modal-overlay.active {
+      display: flex;
+    }
+    .demo-modal-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      max-width: 540px;
+      width: 100%;
+      padding: 2rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .demo-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1rem;
+    }
+    .demo-modal-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .demo-modal-close {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+    .theme-palette-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      margin: 1.25rem 0;
+    }
+    .theme-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: var(--transition-smooth);
+    }
+    .theme-chip.active, .theme-chip:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+    .theme-color-dots {
+      display: flex;
+      gap: 4px;
+    }
+    .color-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
+    /* ==========================================================================
+       MAIN NAVIGATION HEADER
+       ========================================================================== */
+    .site-header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 48px;
+      z-index: 900;
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition-smooth);
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .brand-icon-box {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .brand-text h1 {
+      font-family: var(--font-heading);
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+    }
+    .brand-text span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 1.75rem;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-body);
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .nav-link:hover {
+      color: var(--accent);
+    }
+    .header-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .btn-header-cta {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-header-cta:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    /* ==========================================================================
+       HERO SECTION (SPLIT ASYMMETRIC DESIGN)
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      padding: 4rem 0 5rem;
+      background: radial-gradient(circle at 80% 20%, rgba(14, 116, 144, 0.06) 0%, transparent 60%),
+                  radial-gradient(circle at 10% 80%, rgba(217, 119, 6, 0.04) 0%, transparent 50%);
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(14, 116, 144, 0.15);
+    }
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.12;
+      color: var(--primary);
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+    }
+    .hero-title .text-gradient {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--primary-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--text-body);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 580px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent) 0%, #0891B2 100%);
+      color: #FFFFFF;
+      padding: 0.9rem 1.75rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: 0 10px 25px -5px rgba(14, 116, 144, 0.35);
+      transition: var(--transition-smooth);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(14, 116, 144, 0.45);
+    }
+    .btn-secondary {
+      background: #FFFFFF;
+      color: var(--primary);
+      padding: 0.9rem 1.6rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border: 1px solid var(--border-subtle);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-smooth);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-body);
+      border-color: var(--text-muted);
+      transform: translateY(-2px);
+    }
+    
+    /* Social Proof Mini Bar */
+    .hero-proof-bar {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .proof-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .proof-number {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .proof-label {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Hero Visual Card */
+    .hero-media-wrapper {
+      position: relative;
+    }
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+    .hero-image-card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero-image-card:hover img {
+      transform: scale(1.03);
+    }
+    .floating-card-badge {
+      position: absolute;
+      bottom: 24px;
+      left: -20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      max-width: 280px;
+      animation: float 4s ease-in-out infinite;
+    }
+    .floating-card-badge .icon-pill {
+      width: 42px;
+      height: 42px;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .floating-card-badge p {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--primary);
+      line-height: 1.35;
+    }
+
+    /* ==========================================================================
+       TRUST BAR (INSTITUTIONAL ACCREDITATIONS)
+       ========================================================================== */
+    .trust-bar-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1.5rem 0;
+    }
+    .trust-bar-inner {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .trust-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .trust-pill svg {
+      color: var(--accent);
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ==========================================================================
+       INTERACTIVE SYMPTOM / EVALUATION SELECTOR
+       ========================================================================== */
+    .assessment-section {
+      padding: 5rem 0;
+      background: #FFFFFF;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3rem;
+    }
+    .section-tag {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      color: var(--text-body);
+      font-size: 1.05rem;
+    }
+
+    .assessment-card {
+      background: var(--bg-body);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .symptom-chips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .symptom-chip {
+      background: #FFFFFF;
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.2rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .symptom-chip:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .symptom-chip.selected {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      box-shadow: 0 4px 12px rgba(14, 116, 144, 0.12);
+    }
+    .symptom-chip-title {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.9375rem;
+    }
+    .symptom-chip-desc {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .assessment-result-box {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border-left: 4px solid var(--accent);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .result-info h4 {
+      font-family: var(--font-heading);
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+    .result-info p {
+      font-size: 0.9375rem;
+      color: var(--text-body);
+    }
+
+    /* ==========================================================================
+       SERVICES / SPECIALTIES GRID
+       ========================================================================== */
+    .services-section {
+      padding: 5rem 0;
+      background: var(--bg-body);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(14, 116, 144, 0.3);
+    }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .service-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    .service-desc {
+      font-size: 0.9375rem;
+      color: var(--text-body);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .service-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .service-features li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .service-features li svg {
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       PHILOSOPHY & SUITE SHOWCASE
+       ========================================================================== */
+    .philosophy-section {
+      padding: 5rem 0;
+      background: #FFFFFF;
+    }
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .philosophy-media {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .philosophy-media img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+    .philosophy-feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.75rem;
+    }
+    .philo-item {
+      display: flex;
+      gap: 1rem;
+    }
+    .philo-num {
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      color: #FFFFFF;
+      font-family: var(--font-mono);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .philo-text h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+    .philo-text p {
+      font-size: 0.9375rem;
+      color: var(--text-body);
+    }
+
+    /* ==========================================================================
+       TESTIMONIALS (VERIFIED SOCIAL PROOF)
+       ========================================================================== */
+    .testimonials-section {
+      padding: 5rem 0;
+      background: var(--bg-body);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .testimonial-card {
+      background: #FFFFFF;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .testi-stars {
+      color: #F59E0B;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .testi-quote {
+      font-size: 0.9375rem;
+      color: var(--text-body);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .author-name {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.9375rem;
+    }
+    .author-case {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       FAQ ACCORDION
+       ========================================================================== */
+    .faq-section {
+      padding: 5rem 0;
+      background: #FFFFFF;
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .faq-item {
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition-smooth);
+    }
+    .faq-question {
+      padding: 1.25rem 1.5rem;
+      background: #FFFFFF;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.05rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question:hover {
+      color: var(--accent);
+    }
+    .faq-answer {
+      padding: 0 1.5rem 1.25rem;
+      font-size: 0.9375rem;
+      color: var(--text-body);
+      line-height: 1.7;
+      display: none;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+    .faq-icon {
+      transition: transform 0.3s ease;
+    }
+
+    /* ==========================================================================
+       CTA BANNER SECTION
+       ========================================================================== */
+    .cta-banner-section {
+      padding: 4.5rem 0;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .cta-banner-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .cta-banner-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .cta-banner-desc {
+      font-size: 1.125rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+
+    /* ==========================================================================
+       FOOTER & MEDICAL YMYL DISCLAIMER
+       ========================================================================== */
+    .site-footer {
+      background: #060B18;
+      color: #94A3B8;
+      padding: 4rem 0 2rem;
+      font-size: 0.875rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand h3 {
+      font-family: var(--font-heading);
+      color: #FFFFFF;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .footer-disclaimer-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      color: #94A3B8;
+    }
+    .footer-col h4 {
+      color: #FFFFFF;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .footer-links a:hover {
+      color: #FFFFFF;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       WHATSAPP FLOATING BUTTON
+       ========================================================================== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25D366;
+      color: #FFFFFF;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+      text-decoration: none;
+      font-size: 1.8rem;
+      transition: var(--transition-smooth);
+      animation: pulse 2.5s infinite;
+    }
+    .whatsapp-floating:hover {
+      transform: scale(1.1);
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    /* Keyframes */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-grid, .philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .floating-card-badge {
+        left: 10px;
+        bottom: 10px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .nav-menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       DEMO CUSTOMIZER TOP BAR
+       ========================================================================== -->
+  <div class="demo-bar">
+    <div class="demo-bar-left">
+      <span class="demo-badge">MODO DEMOSTRACIÓN</span>
+      <span>Plantilla médica 100% configurable para tu clínica o consulta.</span>
+    </div>
+    <div class="demo-actions">
+      <button class="demo-btn-theme" onclick="openDemoModal()">
+        🎨 Cambiar Tema & Configuración
+      </button>
+      <a href="https://wa.me/?text=Hola%2C%20me%20interesa%20personalizar%20la%20Landing%20Page%20M%C3%A9dica%20para%20mi%20consulta" target="_blank" class="demo-btn-cta">
+        ⚡ Solicitar mi Landing
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DEMO CUSTOMIZER MODAL
+       ========================================================================== -->
+  <div class="demo-modal-overlay" id="demoModal">
+    <div class="demo-modal-card">
+      <div class="demo-modal-header">
+        <h3 class="demo-modal-title">⚙️ Personalizador de Demostración</h3>
+        <button class="demo-modal-close" onclick="closeDemoModal()">&times;</button>
+      </div>
+      <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Prueba cómo se adaptaría esta landing médica a la identidad visual de tu centro o especialidad en tiempo real:
+      </p>
+
+      <label style="font-weight: 700; font-size: 0.875rem; color: var(--primary);">Paleta de Color en Vivo:</label>
+      <div class="theme-palette-grid">
+        <div class="theme-chip active" onclick="setTheme('default', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #0B132B;"></span>
+            <span class="color-dot" style="background: #0E7490;"></span>
+          </div>
+          <span>Obsidian & Bio-Teal</span>
+        </div>
+        <div class="theme-chip" onclick="setTheme('sapphire', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #0F172A;"></span>
+            <span class="color-dot" style="background: #2563EB;"></span>
+          </div>
+          <span>Sapphire Blue</span>
+        </div>
+        <div class="theme-chip" onclick="setTheme('emerald', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #064E3B;"></span>
+            <span class="color-dot" style="background: #059669;"></span>
+          </div>
+          <span>Emerald Medical</span>
+        </div>
+        <div class="theme-chip" onclick="setTheme('luxury-gold', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #18181B;"></span>
+            <span class="color-dot" style="background: #B45309;"></span>
+          </div>
+          <span>Luxury Bronze</span>
+        </div>
+      </div>
+
+      <div style="background: var(--bg-body); padding: 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; margin-top: 1rem; border-left: 3px solid var(--accent);">
+        <strong>¿Qué podemos personalizar para tu práctica?</strong>
+        <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: var(--text-body);">
+          <li>Fotografías de tu equipo y consultorio.</li>
+          <li>Catálogo exacto de tus consultas y procedimientos.</li>
+          <li>Integración con tu número de WhatsApp y agenda online.</li>
+          <li>Optimización SEO local para tu ciudad y clínica.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem;">
+        <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="closeDemoModal()">
+          Entendido, Explorar Landing
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="brand-logo">
+          <div class="brand-icon-box">🩺</div>
+          <div class="brand-text">
+            <h1>Dr. Julián Sotomayor</h1>
+            <span>Medicina Interna & Longevidad</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+            <li><a href="#autodiagnostico" class="nav-link">Autodiagnóstico</a></li>
+            <li><a href="#filosofia" class="nav-link">Enfoque Clínico</a></li>
+            <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+            <li><a href="#faq" class="nav-link">Preguntas</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta-group">
+          <a href="#contacto" class="btn-header-cta">
+            <span>Agendar Cita</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Medicina Preventiva & Longevidad Basada en Evidencia
+          </div>
+          
+          <h1 class="hero-title">
+            El Arquitecto de tu Salud y <span class="text-gradient">Longevidad Celular</span>
+          </h1>
+          
+          <p class="hero-lead">
+            Evaluación médica integral de causa raíz, control del riesgo cardiometabólico y chequeos ejecutivos sin prisas. Recupera tu vitalidad y previene complicaciones antes de que se manifiesten.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contacto" class="btn-primary">
+              <span>Agendar Consulta Especializada</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#autodiagnostico" class="btn-secondary">
+              <span>Realizar Autoevaluación</span>
+            </a>
+          </div>
+
+          <div class="hero-proof-bar">
+            <div class="proof-item">
+              <span class="proof-number">45-60 min</span>
+              <span class="proof-label">Consulta sin prisas</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-number">98.2%</span>
+              <span class="proof-label">Optimización metabólica</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-number">4.9 / 5.0</span>
+              <span class="proof-label">Satisfacción de pacientes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-wrapper">
+          <div class="hero-image-card">
+            <img src="assets/dr_julian_portrait.jpg" alt="Dr. Julián Sotomayor Médico Internista">
+            
+            <div class="floating-card-badge">
+              <div class="icon-pill">⭐</div>
+              <div>
+                <p><strong>Atención Médica de Élite</strong></p>
+                <p style="font-size: 0.75rem; color: var(--text-muted);">Enfoque holístico y científico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TRUST ACCREDITATION BAR
+       ========================================================================== -->
+  <section class="trust-bar-section">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <div class="trust-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Sociedad Internacional de Medicina Interna
+        </div>
+        <div class="trust-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Especialista en Riesgo Cardiometabólico
+        </div>
+        <div class="trust-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Protocolos de Longevidad & Biomarcadores
+        </div>
+        <div class="trust-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/></svg>
+          Informes Clínicos Digitales en 24 Horas
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE SYMPTOM & EVALUATION SELECTOR
+       ========================================================================== -->
+  <section class="assessment-section" id="autodiagnostico">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Evaluador Interactivo</span>
+        <h2 class="section-title">¿Qué síntoma o necesidad deseas evaluar?</h2>
+        <p class="section-desc">Selecciona tu situación clínica principal para conocer la ruta de evaluación y agendar directamente.</p>
+      </div>
+
+      <div class="assessment-card">
+        <div class="symptom-chips-grid">
+          <div class="symptom-chip selected" onclick="selectSymptom(this, 'fatiga')">
+            <span class="symptom-chip-title">⚡ Fatiga & Niebla Mental</span>
+            <span class="symptom-chip-desc">Cansancio inexplicable, baja energía al despertar</span>
+          </div>
+          <div class="symptom-chip" onclick="selectSymptom(this, 'metabolico')">
+            <span class="symptom-chip-title">🩸 Glucosa / Triglicéridos</span>
+            <span class="symptom-chip-desc">Resistencia a la insulina, hígado graso</span>
+          </div>
+          <div class="symptom-chip" onclick="selectSymptom(this, 'cardiovascular')">
+            <span class="symptom-chip-title">❤️ Presión Arterial / Colesterol</span>
+            <span class="symptom-chip-desc">Hipertensión arterial, riesgo cardiovascular</span>
+          </div>
+          <div class="symptom-chip" onclick="selectSymptom(this, 'chequeo')">
+            <span class="symptom-chip-title">🛡️ Chequeo Ejecutivo 360°</span>
+            <span class="symptom-chip-desc">Despistaje preventivo completo y longevidad</span>
+          </div>
+          <div class="symptom-chip" onclick="selectSymptom(this, 'preoperatorio')">
+            <span class="symptom-chip-title">📋 Riesgo Preoperatorio</span>
+            <span class="symptom-chip-desc">Valoración cardiovascular previa a cirugía</span>
+          </div>
+        </div>
+
+        <div class="assessment-result-box" id="resultBox">
+          <div class="result-info">
+            <h4 id="resultTitle">Ruta Recomendada: Protocolo de Optimización Metabólica & Fatiga</h4>
+            <p id="resultDesc">Analítica avanzada de biomarcadores inflamatorios, eje hormonal, perfil tiroideo y panel mitocondrial en consulta de 60 minutos.</p>
+          </div>
+          <a id="resultBtn" href="https://wa.me/?text=Hola%20Dr.%20Sotomayor,%20deseo%20agendar%20una%20consulta%20por%20Fatiga%20y%20Optimizaci%C3%B3n%20Metab%C3%B3lica" target="_blank" class="btn-primary">
+            Agendar con este Enfoque
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES & SPECIALTIES
+       ========================================================================== -->
+  <section class="services-section" id="especialidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Servicios Insignia</span>
+        <h2 class="section-title">Atención Médica Especializada de Alto Nivel</h2>
+        <p class="section-desc">Procedimientos diagnósticos y terapéuticos orientados a la causa biológica de cada condición.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🧬</div>
+          <h3 class="service-title">Chequeo Ejecutivo & Longevidad 360°</h3>
+          <p class="service-desc">Evaluación médica integral para medir tu edad biológica, capacidad cardiovascular y niveles inflamatorios sistémicos.</p>
+          <ul class="service-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> +40 biomarcadores metabólicos analizados</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Plan preventivo de longevidad a 5 y 10 años</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">❤️</div>
+          <h3 class="service-title">Manejo Cardiometabólico & Hígado Graso</h3>
+          <p class="service-desc">Reversión de resistencia a la insulina, normalización de colesterol denso y control de hipertensión con mínima farmacología.</p>
+          <ul class="service-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monitoreo glucémico continuo no invasivo</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estrategias nutricionales terapéuticas personalizadas</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3 class="service-title">Valoración de Riesgo Quirúrgico</h3>
+          <p class="service-desc">Evaluación cardiovascular y pulmonar exhaustiva para pacientes que se someterán a procedimientos quirúrgicos.</p>
+          <ul class="service-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Electrocardiografía digital de alta resolución</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Entrega de informe preoperatorio en 24h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHILOSOPHY SECTION & SUITE SHOWCASE
+       ========================================================================== -->
+  <section class="philosophy-section" id="filosofia">
+    <div class="container">
+      <div class="philosophy-grid">
+        <div class="philosophy-media">
+          <img src="assets/modern_longevity_suite.jpg" alt="Suite de Consulta Médica Moderna">
+        </div>
+
+        <div class="philosophy-text">
+          <span class="section-tag">Diferencial Clínico</span>
+          <h2 class="section-title">Por qué la Medicina de Causa Raíz Transforma Vidas</h2>
+          <p class="section-desc">
+            La medicina convencional a menudo espera a que los órganos fallen para intervenir con medicamentos paliativos. Nuestro modelo se enfoca en detectar anomalías en fases tempranas.
+          </p>
+
+          <div class="philosophy-feature-list">
+            <div class="philo-item">
+              <div class="philo-num">01</div>
+              <div class="philo-text">
+                <h4>Diagnóstico en Profundidad</h4>
+                <p>No resumimos tu salud en una cita de 10 minutos. Analizamos antecedentes genéticos, cronobiología y entorno.</p>
+              </div>
+            </div>
+            <div class="philo-item">
+              <div class="philo-num">02</div>
+              <div class="philo-text">
+                <h4>Desprescripción Responsable</h4>
+                <p>Siempre que sea biológicamente seguro, reducimos la polimedicación innecesaria a través de optimización celular.</p>
+              </div>
+            </div>
+            <div class="philo-item">
+              <div class="philo-num">03</div>
+              <div class="philo-text">
+                <h4>Acompañamiento Continuo</h4>
+                <p>Canal de seguimiento médico directo para ajustar analíticas y resolver dudas sin complicaciones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS
+       ========================================================================== -->
+  <section class="testimonials-section" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios Reales</span>
+        <h2 class="section-title">La Confianza de Nuestros Pacientes</h2>
+        <p class="section-desc">Historias de personas que recuperaron su energía y control metabólico.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Llevaba 3 años con fatiga constante y colesterol elevado. El Dr. Sotomayor encontró la causa raíz de mi resistencia a la insulina y en 4 meses mis análisis volvieron a valores óptimos."</p>
+          <div class="testi-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <div class="author-name">Mauricio R. (48 años)</div>
+              <div class="author-case">Chequeo Ejecutivo & Salud Metabólica</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"La mejor consulta médica que he tenido. Se tomó una hora completa para explicarme cada indicador en una pantalla y diseñar un plan realista. Cero regaños, 100% soluciones."</p>
+          <div class="testi-author">
+            <div class="author-avatar">CL</div>
+            <div>
+              <div class="author-name">Carmen L. (54 años)</div>
+              <div class="author-case">Control de Hipertensión & Dislipidemia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Requería una evaluación preoperatoria urgente para una cirugía de rodilla. La atención fue puntual, minuciosa y con el informe entregado el mismo día a mi traumatólogo."</p>
+          <div class="testi-author">
+            <div class="author-avatar">GS</div>
+            <div>
+              <div class="author-name">Gonzalo S. (61 años)</div>
+              <div class="author-case">Riesgo Quirúrgico Preoperatorio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ SECTION
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Resolución de Dudas</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Qué incluye la primera consulta de evaluación médica?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Incluye revisión clínica exhaustiva de 45 a 60 minutos, electrocardiografía digital, interpretación integral de analíticas previas, exploración física completa y prescripción del protocolo terapéutico personalizado.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Trabajan con seguros médicos o pólizas de reembolso?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Emitimos informe médico detallado y factura fiscal con códigos diagnósticos internacionales (CIE-10) para el trámite ágil de reembolso ante cualquier compañía aseguradora nacional o internacional.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Cómo se personaliza esta landing page para un médico real?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Esta es una página de demostración interactiva. El diseño, los textos, la paleta de colores, la fotografía profesional y los servicios se ajustan 100% a las credenciales, sedes y especialidad de cada médico o clínica.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CTA BANNER
+       ========================================================================== -->
+  <section class="cta-banner-section" id="contacto">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2 class="cta-banner-title">Tu Salud es tu Activo Más Valioso</h2>
+        <p class="cta-banner-desc">Agenda tu consulta especializada y comienza un plan médico preventivo diseñado a la medida de tu biología.</p>
+        <a href="https://wa.me/?text=Hola%2C%20deseo%20solicitar%20una%20cita%20con%20el%20Dr.%20Juli%C3%A1n%20Sotomayor" target="_blank" class="btn-primary" style="background: #FFFFFF; color: var(--primary); box-shadow: var(--shadow-lg);">
+          <span>Solicitar Cita Médica por WhatsApp</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER & MEDICAL YMYL DISCLAIMER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Dr. Julián Sotomayor V.</h3>
+          <p>Medicina Interna, Riesgo Cardiometabólico y Longevidad Preventiva.</p>
+          <div class="footer-disclaimer-box">
+            <strong>Deslinde de Responsabilidad Médica (Google YMYL):</strong> La información presentada en esta página web tiene fines exclusivamente educativos y demostrativos. No constituye consejo médico directo ni sustituye la valoración clínica presencial por parte de un profesional de la salud colegiado.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sedes de Consulta</h4>
+          <ul class="footer-links">
+            <li>Torre Médica Metropolitana, Piso 5</li>
+            <li>Centro Quirúrgico de Alta Especialidad</li>
+            <li>Consultas Presenciales y Telemedicina</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Configuración Demo</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openDemoModal()">🎨 Selector de Colores</a></li>
+            <li><a href="https://wa.me/?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20crear%20mi%20Landing%20Page%20M%C3%A9dica" target="_blank">⚡ Adquirir esta Plantilla</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Dr. Julián Sotomayor — Landing Page Médica de Demostración. Todos los derechos reservados.</p>
+        <p style="font-family: var(--font-mono); font-size: 0.75rem;">Diseñado con Arquitectura Antigravity & Google Stitch</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Widget -->
+  <a href="https://wa.me/?text=Hola%20Dr.%20Sotomayor,%20deseo%20informaci%C3%B3n%20para%20agendar%20una%20consulta" target="_blank" class="whatsapp-floating" aria-label="Contacto WhatsApp">
+    💬
+  </a>
+
+  <!-- ==========================================================================
+       INTERACTIVE JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    // Demo Modal Controls
+    function openDemoModal() {
+      document.getElementById('demoModal').classList.add('active');
+    }
+    function closeDemoModal() {
+      document.getElementById('demoModal').classList.remove('active');
+    }
+
+    // Live Theme Switcher
+    function setTheme(themeName, element) {
+      if (themeName === 'default') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', themeName);
+      }
+      document.querySelectorAll('.theme-chip').forEach(chip => chip.classList.remove('active'));
+      if (element) element.classList.add('active');
+    }
+
+    // Interactive Symptom / Diagnostic Selector
+    const symptomData = {
+      fatiga: {
+        title: "Ruta: Protocolo de Optimización Metabólica & Fatiga Crónica",
+        desc: "Analítica avanzada de biomarcadores inflamatorios, eje hormonal, perfil tiroideo y panel mitocondrial en consulta de 60 minutos.",
+        msg: "Hola Dr. Sotomayor, deseo agendar una consulta por Fatiga y Optimización Metabólica"
+      },
+      metabolico: {
+        title: "Ruta: Control Integral de Resistencia a la Insulina & Hígado Graso",
+        desc: "Evaluación de índice HOMA-IR, perfil lipídico fraccionado y plan nutricional terapéutico guiado por evidencia.",
+        msg: "Hola Dr. Sotomayor, deseo agendar consulta para evaluación de Glucosa y Salud Metabólica"
+      },
+      cardiovascular: {
+        title: "Ruta: Prevención Cardiovascular Avanzada & Control de Presión",
+        desc: "Electrocardiografía de alta resolución, mapeo de variabilidad cardíaca y titulación farmacológica precisa.",
+        msg: "Hola Dr. Sotomayor, deseo una consulta para evaluación de Presión Arterial y Riesgo Cardiovascular"
+      },
+      chequeo: {
+        title: "Ruta: Chequeo Ejecutivo 360° & Evaluación de Longevidad",
+        desc: "Despistaje preventivo total de más de 40 parámetros biológicos con informe integral de edad biológica.",
+        msg: "Hola Dr. Sotomayor, deseo información y agendamiento para el Chequeo Ejecutivo 360"
+      },
+      preoperatorio: {
+        title: "Ruta: Valoración de Riesgo Quirúrgico con Entrega en 24h",
+        desc: "Revisión preoperatoria multidisciplinaria, electrocardiograma e informe oficial con certificación de aptitud.",
+        msg: "Hola Dr. Sotomayor, requiero una Valoración Preoperatoria urgente con informe en 24h"
+      }
+    };
+
+    function selectSymptom(element, type) {
+      document.querySelectorAll('.symptom-chip').forEach(chip => chip.classList.remove('selected'));
+      element.classList.add('selected');
+
+      const data = symptomData[type] || symptomData.fatiga;
+      document.getElementById('resultTitle').textContent = data.title;
+      document.getElementById('resultDesc').textContent = data.desc;
+      document.getElementById('resultBtn').href = `https://wa.me/?text=${encodeURIComponent(data.msg)}`;
+    }
+
+    // FAQ Toggle
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      item.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

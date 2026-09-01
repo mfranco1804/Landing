@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- ==========================================================================
+       1. GOOGLE YMYL & DENTAL SEO META TAGS (DEMO TEMPLATE)
+       ========================================================================== -->
+  <title>Dra. Valeria Montesinos | Odontología Estética & Diseño de Sonrisa 3D (Demo)</title>
+  <meta name="description" content="Plantilla Landing Page Odontológica de Lujo y Alta Conversión. Dra. Valeria Montesinos — Especialista en Carillas Cerámicas Ultra-Finas, DSD e Implantes Guiados.">
+  <meta name="keywords" content="odontologia estetica, diseno de sonrisa, carillas de porcelana, carillas dentales, implantes dentales 3d, blanqueamiento dental, clinica dental de lujo">
+  <meta name="author" content="Dra. Valeria Montesinos">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  
+  <!-- Dental Quality Signals -->
+  <meta name="medical-specialty" content="Dentistry, Cosmetic Dentistry, Prosthodontics, Dental Implants, Digital Smile Design">
+  <meta name="doc-type" content="Dental Clinic Web Page Demo">
+  <meta name="revised" content="2026-08-31">
+  <meta name="date-modified" content="2026-08-31">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Dra. Valeria Montesinos | Odontología Estética & Diseño de Sonrisa Digital">
+  <meta property="og:description" content="Diseño de sonrisa 100% natural, carillas de porcelana ultra-conservadoras y experiencia tipo spa dental sin dolor.">
+  <meta property="og:image" content="assets/dra_valeria_portrait.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="900">
+  
+  <!-- Fonts Preconnect (Luxury Editorial & Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,600..800;1,6..96,600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- ==========================================================================
+       2. GOOGLE YMYL SCHEMA.ORG GRAPH (JSON-LD)
+       ========================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://demo-odontologo.local/#dentalpage",
+        "name": "Dra. Valeria Montesinos | Odontología Estética y Diseño de Sonrisa",
+        "description": "Portal odontológico de demostración de alta gama con catálogo de carillas de porcelana, diseño de sonrisa digital DSD e implantes 3D.",
+        "inLanguage": "es",
+        "lastReviewed": "2026-08-31",
+        "reviewedBy": {
+          "@id": "https://demo-odontologo.local/#dentist"
+        }
+      },
+      {
+        "@type": "Dentist",
+        "@id": "https://demo-odontologo.local/#dentist",
+        "name": "Dra. Valeria Montesinos",
+        "medicalSpecialty": [
+          "Dentistry",
+          "Prosthodontics",
+          "OralSurgery"
+        ],
+        "image": "assets/dra_valeria_portrait.jpg",
+        "description": "Especialista en Rehabilitación Oral, Odontología Cosmética y Diseño de Sonrisa Digital 3D."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://demo-odontologo.local/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Se manchan las carillas de porcelana con el café o el vino tinto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Las carillas cerámicas de disilicato de litio y feldespáticas tienen una superficie vítrea de máxima pureza que no absorbe pigmentos ni pierde su brillo natural a lo largo de los años."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo adaptar esta landing page para mi clínica dental?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Esta plantilla de demostración es 100% personalizable en colores, fotografías de casos reales, tratamientos odontológicos, enlaces de WhatsApp y datos de contacto."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ==========================================================================
+       3. CSS DESIGN SYSTEM (TOKENS & HIGH-END DENTAL SPA STYLES)
+       ========================================================================== -->
+  <style>
+    :root {
+      /* Theme 1: Luxury Onyx & Champagne Gold (Default) */
+      --primary: #09090B;
+      --primary-rgb: 9, 9, 11;
+      --primary-surface: #18181B;
+      --accent: #D4AF37;
+      --accent-rgb: 212, 175, 55;
+      --accent-hover: #C59B27;
+      --accent-light: #FDFBF7;
+      --accent-border: #E5D5A5;
+      
+      --fresh: #0D9488;
+      --fresh-light: #F0FDFA;
+      
+      --bg-body: #FAF8F5;
+      --bg-surface: #FFFFFF;
+      --border-subtle: #E7E5E4;
+      
+      --text-main: #18181B;
+      --text-body: #44403C;
+      --text-muted: #78716C;
+      
+      --shadow-sm: 0 2px 8px rgba(9, 9, 11, 0.04);
+      --shadow-md: 0 10px 30px -6px rgba(9, 9, 11, 0.08);
+      --shadow-lg: 0 25px 50px -12px rgba(9, 9, 11, 0.12);
+      --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.25);
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --font-editorial: 'Bodoni Moda', serif;
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      
+      --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Live Themes */
+    [data-theme="pearl-teal"] {
+      --primary: #042F2E;
+      --primary-surface: #115E59;
+      --accent: #0D9488;
+      --accent-rgb: 13, 148, 136;
+      --accent-hover: #0F766E;
+      --accent-light: #F0FDFA;
+      --accent-border: #99F6E4;
+      --bg-body: #F7FBFA;
+    }
+    [data-theme="rose-gold"] {
+      --primary: #1C1917;
+      --primary-surface: #292524;
+      --accent: #E07A5F;
+      --accent-rgb: 224, 122, 95;
+      --accent-hover: #CC6B52;
+      --accent-light: #FFF5F2;
+      --accent-border: #FFD4C9;
+      --bg-body: #FAF7F5;
+    }
+    [data-theme="royal-blue"] {
+      --primary: #0F172A;
+      --primary-surface: #1E293B;
+      --accent: #2563EB;
+      --accent-rgb: 37, 99, 235;
+      --accent-hover: #1D4ED8;
+      --accent-light: #EFF6FF;
+      --accent-border: #BFDBFE;
+      --bg-body: #F8FAFC;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ==========================================================================
+       DEMO CUSTOMIZER TOP BAR
+       ========================================================================== */
+    .demo-bar {
+      background: #18181B;
+      color: #FFFFFF;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+    .demo-badge {
+      background: #D4AF37;
+      color: #09090B;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.05em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .demo-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #09090B;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+    .demo-btn-theme {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition-smooth);
+    }
+    .demo-btn-theme:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .demo-btn-cta {
+      background: #D4AF37;
+      color: #09090B;
+      padding: 0.35rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .demo-btn-cta:hover {
+      background: #E5C158;
+      transform: translateY(-1px);
+    }
+
+    /* Demo Modal */
+    .demo-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(5px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .demo-modal-overlay.active {
+      display: flex;
+    }
+    .demo-modal-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      max-width: 540px;
+      width: 100%;
+      padding: 2rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .demo-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1rem;
+    }
+    .demo-modal-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .theme-palette-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      margin: 1.25rem 0;
+    }
+    .theme-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: var(--transition-smooth);
+    }
+    .theme-chip.active, .theme-chip:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+    .theme-color-dots {
+      display: flex;
+      gap: 4px;
+    }
+    .color-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
+    /* ==========================================================================
+       SITE HEADER
+       ========================================================================== */
+    .site-header {
+      background: rgba(250, 248, 245, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 48px;
+      z-index: 900;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .brand-icon-box {
+      width: 44px;
+      height: 44px;
+      background: var(--primary);
+      color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .brand-text h1 {
+      font-family: var(--font-editorial);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--primary);
+    }
+    .brand-text span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #92400E;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: block;
+    }
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-body);
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: var(--transition-smooth);
+    }
+    .nav-link:hover {
+      color: #B45309;
+    }
+    .btn-header-cta {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 0.7rem 1.4rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-header-cta:hover {
+      background: #B45309;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding: 4.5rem 0 5.5rem;
+      position: relative;
+      background: radial-gradient(circle at 85% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+                  radial-gradient(circle at 10% 80%, rgba(13, 148, 136, 0.05) 0%, transparent 50%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #FFFFFF;
+      color: #92400E;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-title {
+      font-family: var(--font-editorial);
+      font-size: clamp(2.5rem, 5vw, 3.85rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--primary);
+      margin-bottom: 1.35rem;
+    }
+    .hero-title .editorial-italic {
+      font-style: italic;
+      color: #B45309;
+      font-family: var(--font-editorial);
+    }
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--text-body);
+      line-height: 1.75;
+      margin-bottom: 2.25rem;
+      max-width: 560px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 0.95rem 1.85rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-smooth);
+    }
+    .btn-primary:hover {
+      background: #B45309;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+    .btn-secondary {
+      background: #FFFFFF;
+      color: var(--primary);
+      padding: 0.95rem 1.75rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border: 1px solid var(--border-subtle);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition-smooth);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-body);
+      border-color: #B45309;
+      transform: translateY(-2px);
+    }
+
+    /* Hero Media */
+    .hero-media-wrapper {
+      position: relative;
+    }
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+    .hero-image-card img {
+      width: 100%;
+      height: 490px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s ease;
+    }
+    .hero-image-card:hover img {
+      transform: scale(1.02);
+    }
+    .floating-award-pill {
+      position: absolute;
+      bottom: 24px;
+      right: -15px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 0.9rem 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      animation: float 4s ease-in-out infinite;
+    }
+    .floating-award-pill .pill-icon {
+      font-size: 1.5rem;
+    }
+    .floating-award-pill h5 {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .floating-award-pill p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       BEFORE & AFTER INTERACTIVE SLIDER (HERO CASE)
+       ========================================================================== */
+    .comparison-section {
+      padding: 5rem 0;
+      background: #FFFFFF;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3rem;
+    }
+    .section-tag {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #92400E;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--font-editorial);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      color: var(--text-body);
+      font-size: 1.05rem;
+    }
+
+    .slider-container-card {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #FAF8F5;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+    }
+    .before-after-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      user-select: none;
+      box-shadow: var(--shadow-sm);
+    }
+    .before-after-img {
+      width: 100%;
+      display: block;
+      height: 480px;
+      object-fit: cover;
+    }
+    .slider-instruction {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    /* ==========================================================================
+       INTERACTIVE SMILE GOAL SELECTOR
+       ========================================================================== */
+    .goal-section {
+      padding: 5rem 0;
+      background: var(--bg-body);
+    }
+    .goal-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .goal-chips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .goal-chip {
+      background: #FAF8F5;
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      text-align: center;
+    }
+    .goal-chip:hover {
+      border-color: #B45309;
+      transform: translateY(-2px);
+    }
+    .goal-chip.selected {
+      border-color: #B45309;
+      background: #FFFDF9;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+    }
+    .goal-chip-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .goal-chip-title {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.95rem;
+    }
+
+    .goal-result-box {
+      background: #FAF8F5;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border-left: 4px solid #B45309;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .goal-result-info h4 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+    .goal-result-info p {
+      font-size: 0.9375rem;
+      color: var(--text-body);
+    }
+
+    /* ==========================================================================
+       TREATMENTS CATALOG
+       ========================================================================== */
+    .treatments-section {
+      padding: 5rem 0;
+      background: #FFFFFF;
+    }
+    .treatments-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+    .treatment-card {
+      background: #FAF8F5;
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+    }
+    .treatment-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(212, 175, 55, 0.4);
+      background: #FFFFFF;
+    }
+    .treatment-icon {
+      width: 52px;
+      height: 52px;
+      background: #FFFFFF;
+      color: #B45309;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .treatment-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    .treatment-desc {
+      font-size: 0.9375rem;
+      color: var(--text-body);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .treatment-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    .treatment-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .treatment-bullets li span {
+      color: #B45309;
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       SPA DENTAL EXPERIENCE & SUITE SHOWCASE
+       ========================================================================== */
+    .spa-section {
+      padding: 5rem 0;
+      background: #18181B;
+      color: #FFFFFF;
+    }
+    .spa-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .spa-media {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .spa-media img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+    .spa-title {
+      font-family: var(--font-editorial);
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 1.25rem;
+      color: #FFFFFF;
+    }
+    .spa-desc {
+      font-size: 1.05rem;
+      opacity: 0.85;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .spa-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .spa-pillar-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+    }
+    .spa-pillar-box h4 {
+      color: #D4AF37;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .spa-pillar-box p {
+      font-size: 0.8125rem;
+      opacity: 0.8;
+    }
+
+    /* ==========================================================================
+       TESTIMONIALS
+       ========================================================================== */
+    .testimonials-section {
+      padding: 5rem 0;
+      background: var(--bg-body);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .testimonial-card {
+      background: #FFFFFF;
+      padding: 2.25rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .testi-stars {
+      color: #D4AF37;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .testi-quote {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--text-body);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .author-name {
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .author-treatment {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       FAQ SECTION
+       ========================================================================== */
+    .faq-section {
+      padding: 5rem 0;
+      background: #FFFFFF;
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .faq-item {
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 1.25rem 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.05rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question:hover {
+      color: #B45309;
+    }
+    .faq-answer {
+      padding: 0 1.5rem 1.25rem;
+      font-size: 0.9375rem;
+      color: var(--text-body);
+      line-height: 1.7;
+      display: none;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* ==========================================================================
+       CTA BANNER
+       ========================================================================== */
+    .cta-banner-section {
+      padding: 4.5rem 0;
+      background: linear-gradient(135deg, #18181B 0%, #09090B 100%);
+      color: #FFFFFF;
+      text-align: center;
+      border-top: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .cta-banner-title {
+      font-family: var(--font-editorial);
+      font-size: clamp(2.25rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    .cta-banner-desc {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .site-footer {
+      background: #09090B;
+      color: #A1A1AA;
+      padding: 4rem 0 2rem;
+      font-size: 0.875rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand h3 {
+      font-family: var(--font-editorial);
+      color: #FFFFFF;
+      font-size: 1.35rem;
+      margin-bottom: 0.5rem;
+    }
+    .footer-disclaimer {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 0.8125rem;
+      line-height: 1.6;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25D366;
+      color: #FFFFFF;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+      text-decoration: none;
+      font-size: 1.8rem;
+      animation: pulse 2.5s infinite;
+      transition: var(--transition-smooth);
+    }
+    .whatsapp-floating:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .spa-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .floating-award-pill {
+        right: 10px;
+        bottom: 10px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       DEMO CUSTOMIZER TOP BAR
+       ========================================================================== -->
+  <div class="demo-bar">
+    <div>
+      <span class="demo-badge">MODO DEMOSTRACIÓN</span>
+      <span style="margin-left: 0.5rem;">Plantilla dental de lujo 100% personalizable para tu clínica.</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <button class="demo-btn-theme" onclick="openDemoModal()">
+        🎨 Cambiar Tema & Configuración
+      </button>
+      <a href="https://wa.me/?text=Hola%2C%20me%20interesa%20personalizar%20la%20Landing%20Page%20Odontol%C3%B3gica%20para%20mi%20cl%C3%ADnica" target="_blank" class="demo-btn-cta">
+        ⚡ Solicitar mi Landing
+      </a>
+    </div>
+  </div>
+
+  <!-- Demo Modal -->
+  <div class="demo-modal-overlay" id="demoModal">
+    <div class="demo-modal-card">
+      <div class="demo-modal-header">
+        <h3 class="demo-modal-title">⚙️ Personalizador de Demostración Dental</h3>
+        <button style="background:transparent; border:none; font-size:1.5rem; cursor:pointer;" onclick="closeDemoModal()">&times;</button>
+      </div>
+      <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Adapta la paleta cromática a la estética de tu clínica en tiempo real:
+      </p>
+
+      <label style="font-weight: 700; font-size: 0.875rem; color: var(--primary);">Paleta en Vivo:</label>
+      <div class="theme-palette-grid">
+        <div class="theme-chip active" onclick="setTheme('default', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #09090B;"></span>
+            <span class="color-dot" style="background: #D4AF37;"></span>
+          </div>
+          <span>Onyx & Champagne Gold</span>
+        </div>
+        <div class="theme-chip" onclick="setTheme('pearl-teal', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #042F2E;"></span>
+            <span class="color-dot" style="background: #0D9488;"></span>
+          </div>
+          <span>Pearl Aquamarine Spa</span>
+        </div>
+        <div class="theme-chip" onclick="setTheme('rose-gold', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #1C1917;"></span>
+            <span class="color-dot" style="background: #E07A5F;"></span>
+          </div>
+          <span>Rose Gold Aesthetic</span>
+        </div>
+        <div class="theme-chip" onclick="setTheme('royal-blue', this)">
+          <div class="theme-color-dots">
+            <span class="color-dot" style="background: #0F172A;"></span>
+            <span class="color-dot" style="background: #2563EB;"></span>
+          </div>
+          <span>Sapphire Dental</span>
+        </div>
+      </div>
+
+      <div style="background: var(--bg-body); padding: 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; margin-top: 1rem; border-left: 3px solid #B45309;">
+        <strong>Totalmente Personalizable:</strong>
+        <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: var(--text-body);">
+          <li>Fotografías de antes y después de tus propios pacientes.</li>
+          <li>Integración de tu número de WhatsApp para citas directas.</li>
+          <li>Ubicaciones, precios orientativos y financiamiento.</li>
+          <li>Certificaciones, sellos de calidad y testimonios.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="closeDemoModal()">
+          Entendido, Ver Landing
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="brand-logo">
+          <div class="brand-icon-box">✨</div>
+          <div class="brand-text">
+            <h1>Dra. Valeria Montesinos</h1>
+            <span>Odontología Estética & DSD</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#casos" class="nav-link">Antes & Después</a></li>
+            <li><a href="#objetivos" class="nav-link">Tu Sonrisa Ideal</a></li>
+            <li><a href="#tratamientos" class="nav-link">Tratamientos</a></li>
+            <li><a href="#experiencia" class="nav-link">Spa Dental</a></li>
+            <li><a href="#faq" class="nav-link">Preguntas</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <a href="#contacto" class="btn-header-cta">
+            <span>Diseñar mi Sonrisa</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge">
+            💎 Micro-Estética Dental Conservadora & Sin Dolor
+          </div>
+
+          <h1 class="hero-title">
+            La Arquitectura de una Sonrisa <span class="editorial-italic">Natural e Inolvidable</span>
+          </h1>
+
+          <p class="hero-lead">
+            Diseño de Sonrisa Digital 3D (DSD), carillas cerámicas ultra-conservadoras sin desgaste agresivo y una experiencia tipo spa odontológico donde el dolor es cosa del pasado.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contacto" class="btn-primary">
+              <span>Agendar Evaluación y Escaneo 3D</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#casos" class="btn-secondary">
+              <span>Ver Casos de Transformación</span>
+            </a>
+          </div>
+
+          <div style="display: flex; gap: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+            <div>
+              <strong style="font-family: var(--font-editorial); font-size: 1.5rem; color: var(--primary);">+1,200</strong>
+              <p style="font-size: 0.8125rem; color: var(--text-muted);">Sonrisas Diseñadas</p>
+            </div>
+            <div>
+              <strong style="font-family: var(--font-editorial); font-size: 1.5rem; color: var(--primary);">0.2 mm</strong>
+              <p style="font-size: 0.8125rem; color: var(--text-muted);">Carillas Ultra-Finas</p>
+            </div>
+            <div>
+              <strong style="font-family: var(--font-editorial); font-size: 1.5rem; color: var(--primary);">100%</strong>
+              <p style="font-size: 0.8125rem; color: var(--text-muted);">Cerámica Alemana E-Max</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-wrapper">
+          <div class="hero-image-card">
+            <img src="assets/dra_valeria_portrait.jpg" alt="Dra. Valeria Montesinos Odontóloga Estética">
+            
+            <div class="floating-award-pill">
+              <div class="pill-icon">🏆</div>
+              <div>
+                <h5>Master en Estética Dental</h5>
+                <p>Digital Smile Design Certified</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BEFORE & AFTER SHOWCASE SECTION
+       ========================================================================== -->
+  <section class="comparison-section" id="casos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galería de Resultados Clínicos</span>
+        <h2 class="section-title">Transformaciones que Devuelven la Confianza</h2>
+        <p class="section-desc">Resultados reales con armonía anatómica, colorimetría calibrada y acabado natural.</p>
+      </div>
+
+      <div class="slider-container-card">
+        <div class="before-after-wrapper">
+          <img src="assets/smile_before_after.jpg" alt="Antes y Después de Diseño de Sonrisa con Carillas Cerámicas" class="before-after-img">
+        </div>
+        <div class="slider-instruction">
+          <span>✨ Caso clínico: Corrección de tono, micro-alineación y carillas feldespáticas en sector anterior</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE SMILE GOAL SELECTOR
+       ========================================================================== -->
+  <section class="goal-section" id="objetivos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Asesoría Interactiva</span>
+        <h2 class="section-title">¿Cuál es tu objetivo estético principal?</h2>
+        <p class="section-desc">Selecciona tu meta para ver el tratamiento recomendado y solicitar tu propuesta.</p>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-chips-grid">
+          <div class="goal-chip selected" onclick="selectGoal(this, 'carillas')">
+            <span class="goal-chip-icon">💎</span>
+            <span class="goal-chip-title">Carillas de Porcelana</span>
+          </div>
+          <div class="goal-chip" onclick="selectGoal(this, 'blanqueamiento')">
+            <span class="goal-chip-icon">✨</span>
+            <span class="goal-chip-title">Blanqueamiento Láser</span>
+          </div>
+          <div class="goal-chip" onclick="selectGoal(this, 'implantes')">
+            <span class="goal-chip-icon">🔩</span>
+            <span class="goal-chip-title">Implantes Guiados 3D</span>
+          </div>
+          <div class="goal-chip" onclick="selectGoal(this, 'gingivoplastia')">
+            <span class="goal-chip-icon">🌿</span>
+            <span class="goal-chip-title">Armonización de Encías</span>
+          </div>
+        </div>
+
+        <div class="goal-result-box" id="goalResultBox">
+          <div class="goal-result-info">
+            <h4 id="goalResultTitle">Tratamiento Sugerido: Carillas Cerámicas E-Max Micro-Prep</h4>
+            <p id="goalResultDesc">Láminas de 0.2 mm que corrigen manchas, tamaño y simetría sin desgastar tus dientes sanos. Con prueba Mock-Up previa.</p>
+          </div>
+          <a id="goalResultBtn" href="https://wa.me/?text=Hola%20Dra.%20Valeria,%20deseo%20evaluaci%C3%B3n%20para%20Carillas%20de%20Porcelana" target="_blank" class="btn-primary">
+            Solicitar Evaluación de Carillas
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TREATMENTS GRID
+       ========================================================================== -->
+  <section class="treatments-section" id="tratamientos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Procedimientos</span>
+        <h2 class="section-title">Odontología de Precisión y Vanguardia</h2>
+      </div>
+
+      <div class="treatments-grid">
+        <div class="treatment-card">
+          <div class="treatment-icon">🖥️</div>
+          <h3 class="treatment-title">Diseño de Sonrisa Digital 3D (DSD)</h3>
+          <p class="treatment-desc">Planificación fotográfica y escaneo intraoral con prueba física directa en boca (*Mock-Up*) para que veas tu nueva sonrisa antes de comenzar.</p>
+          <ul class="treatment-bullets">
+            <li><span>✓</span> Cero sorpresas en el resultado final</li>
+            <li><span>✓</span> Simulación digital de proporciones faciales</li>
+          </ul>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon">💎</div>
+          <h3 class="treatment-title">Carillas de Porcelana Ultra-Finas</h3>
+          <p class="treatment-desc">Cerámicas biocompatibles de alta resistencia (*Disilicato de Litio*) que devuelven blancura, brillo y forma impecable sin envejecer.</p>
+          <ul class="treatment-bullets">
+            <li><span>✓</span> Conservación máxima del esmalte dental</li>
+            <li><span>✓</span> No se manchan ni pierden brillo</li>
+          </ul>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon">🦷</div>
+          <h3 class="treatment-title">Implantes Inmediatos Guiados 3D</h3>
+          <p class="treatment-desc">Reposición de piezas perdidas en una sola sesión con cirugía computarizada de máxima precisión y recuperación acelerada.</p>
+          <ul class="treatment-bullets">
+            <li><span>✓</span> Cirugía mínimamente invasiva sin bisturí</li>
+            <li><span>✓</span> Corona provisional estética el mismo día</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SPA DENTAL EXPERIENCE
+       ========================================================================== -->
+  <section class="spa-section" id="experiencia">
+    <div class="container">
+      <div class="spa-grid">
+        <div class="spa-media">
+          <img src="assets/luxury_dental_clinic.jpg" alt="Instalaciones de Clínica Dental de Lujo">
+        </div>
+
+        <div>
+          <span style="color: #D4AF37; font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">
+            Atmósfera Spa Dental
+          </span>
+          <h2 class="spa-title">Una Experiencia Diseñada para tu Máxima Tranquilidad</h2>
+          <p class="spa-desc">
+            Olvídate de los consultorios fríos y el estrés del dentista tradicional. Hemos concebido cada espacio con aromaterapia, música envolvente y tecnología silenciosa.
+          </p>
+
+          <div class="spa-pillars">
+            <div class="spa-pillar-box">
+              <h4>🎧 Audífonos Cancelación de Ruido</h4>
+              <p>Disfruta de tu música o serie favorita durante la sesión.</p>
+            </div>
+            <div class="spa-pillar-box">
+              <h4>🌿 Sedación Consciente</h4>
+              <p>Opción ideal para personas con miedo o ansiedad al dentista.</p>
+            </div>
+            <div class="spa-pillar-box">
+              <h4>📸 Escáner Intraoral 3D</h4>
+              <p>Sin pastas desagradables ni moldes incómodos.</p>
+            </div>
+            <div class="spa-pillar-box">
+              <h4>☕ Lounge Exclusivo</h4>
+              <p>Bebidas relajantes y ambiente de máxima privacidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS
+       ========================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title">Lo que Dicen Quienes Ya Sonríen con Orgullo</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Toda mi vida evité sonreír en fotos por dientes manchados y desalineados. La Dra. Valeria me diseñó unas carillas que lucen 100% naturales. Mi autoestima dio un giro de 180 grados."</p>
+          <div>
+            <div class="author-name">Sofía Mendoza</div>
+            <div class="author-treatment">Diseño de Sonrisa • 8 Carillas E-Max</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Le tenía pánico absoluto al dentista por malas experiencias. En esta clínica la atención es de otro nivel: cero dolor, música relajante y una delicadeza impresionante."</p>
+          <div>
+            <div class="author-name">Alejandro Morales</div>
+            <div class="author-treatment">Implante Guiado 3D & Blanqueamiento</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"La prueba del Mock-up antes de hacer las carillas definitivas me dio total seguridad. Pude elegir la forma y el color exacto. El resultado superó todas mis expectativas."</p>
+          <div>
+            <div class="author-name">Valentina Castro</div>
+            <div class="author-treatment">Diseño de Sonrisa Digital (DSD)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ SECTION
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dudas Frecuentes</span>
+        <h2 class="section-title">Preguntas Habituales</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Las carillas de porcelana se ven artificiales o demasiado blancas?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            No. Nuestro protocolo de colorimetría avanzada replica la translucidez, textura micro-estructurada y degradado natural del esmalte biológico, evitando el aspecto artificial o plano.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Cuánto tiempo duran las carillas cerámicas?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Con una higiene adecuada y controles periódicos anuales, las carillas de disilicato de litio tienen una longevidad clínica comprobada de más de 15 a 20 años sin perder brillo ni adherencia.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Cómo adapto esta página web para mi consultorio dental real?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Esta plantilla está desarrollada con arquitectura moderna y es 100% personalizable: podemos sustituir las fotos por las de tu clínica, incluir tus casos reales de antes/después y conectar tu WhatsApp directo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CTA BANNER
+       ========================================================================== -->
+  <section class="cta-banner-section" id="contacto">
+    <div class="container">
+      <h2 class="cta-banner-title">Es Momento de Mostrar la Sonrisa que Mereces</h2>
+      <p class="cta-banner-desc">Reserva tu sesión de escaneo 3D y evaluación estética personalizada.</p>
+      <a href="https://wa.me/?text=Hola%2C%20deseo%20agendar%20una%20cita%20con%20la%20Dra.%20Valeria%20Montesinos" target="_blank" class="btn-primary" style="background: #D4AF37; color: #09090B; border: none; font-size: 1.05rem;">
+        <span>Agendar Escaneo 3D por WhatsApp</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Dra. Valeria Montesinos</h3>
+          <p>Odontología Estética de Alta Precisión, DSD & Rehabilitación Oral.</p>
+          <div class="footer-disclaimer">
+            <strong>Aviso de Demostración & Deslinde Médico:</strong> Esta página web es un prototipo demostrativo. Las imágenes y testimonios son con fines ilustrativos. Los procedimientos odontológicos requieren valoración diagnóstica individual presencial.
+          </div>
+        </div>
+
+        <div>
+          <h4 style="color: #FFFFFF; margin-bottom: 1rem;">Clínica de Lujo</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li>Torre Médica & Dental Platinum</li>
+            <li>Consultas Privadas & Citas VIP</li>
+            <li>Lunes a Sábado con previa cita</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #FFFFFF; margin-bottom: 1rem;">Demostración</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><a href="javascript:void(0)" onclick="openDemoModal()" style="color: #D4AF37; text-decoration: none;">🎨 Personalizar Paleta</a></li>
+            <li><a href="https://wa.me/?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20crear%20la%20Landing%20Page%20de%20mi%20Cl%C3%ADnica%20Dental" target="_blank" style="color: #D4AF37; text-decoration: none;">⚡ Solicitar para mi Clínica</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Dra. Valeria Montesinos — Landing Page Odontológica Demo. Todos los derechos reservados.</p>
+        <p style="font-size: 0.75rem; color: #71717A;">Desarrollado con Arquitectura Google Stitch & Antigravity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/?text=Hola%20Dra.%20Valeria,%20deseo%20informaci%C3%B3n%20para%20agendar%20mi%20dise%C3%B1o%20de%20sonrisa" target="_blank" class="whatsapp-floating" aria-label="Contacto WhatsApp">
+    💬
+  </a>
+
+  <!-- ==========================================================================
+       INTERACTIVE JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    function openDemoModal() {
+      document.getElementById('demoModal').classList.add('active');
+    }
+    function closeDemoModal() {
+      document.getElementById('demoModal').classList.remove('active');
+    }
+
+    function setTheme(themeName, element) {
+      if (themeName === 'default') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', themeName);
+      }
+      document.querySelectorAll('.theme-chip').forEach(chip => chip.classList.remove('active'));
+      if (element) element.classList.add('active');
+    }
+
+    const goalData = {
+      carillas: {
+        title: "Tratamiento Sugerido: Carillas Cerámicas E-Max Micro-Prep",
+        desc: "Láminas de 0.2 mm que corrigen manchas, tamaño y simetría sin desgastar tus dientes sanos. Con prueba Mock-Up previa.",
+        msg: "Hola Dra. Valeria, deseo evaluación para Carillas de Porcelana"
+      },
+      blanqueamiento: {
+        title: "Tratamiento Sugerido: Blanqueamiento Láser Dual Indoloro",
+        desc: "Protocolo clínico de 1 sola sesión con desensibilización previa y activación foto-química para aclarar hasta 6 tonos.",
+        msg: "Hola Dra. Valeria, deseo información para Blanqueamiento Dental Láser"
+      },
+      implantes: {
+        title: "Tratamiento Sugerido: Implante Dental Inmediato Guiado por 3D",
+        desc: "Reposición de pieza dental ausente con cirugía virtual milimétrica y corona estética el mismo día.",
+        msg: "Hola Dra. Valeria, deseo evaluación para Implantes Dentales Guiados 3D"
+      },
+      gingivoplastia: {
+        title: "Tratamiento Sugerido: Armonización Orofacial & Gingivoplastia Láser",
+        desc: "Perfilado estético del contorno de encías con micro-láser para estilizar la proporción y brillo de tus dientes.",
+        msg: "Hola Dra. Valeria, deseo consulta para Armonización de Encías"
+      }
+    };
+
+    function selectGoal(element, type) {
+      document.querySelectorAll('.goal-chip').forEach(chip => chip.classList.remove('selected'));
+      element.classList.add('selected');
+
+      const data = goalData[type] || goalData.carillas;
+      document.getElementById('goalResultTitle').textContent = data.title;
+      document.getElementById('goalResultDesc').textContent = data.desc;
+      document.getElementById('goalResultBtn').href = `https://wa.me/?text=${encodeURIComponent(data.msg)}`;
+    }
+
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      item.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
